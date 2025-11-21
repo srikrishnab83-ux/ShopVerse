@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="kn">
+<!DOCTYPE html><html lang="kn">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,26 +13,18 @@
   button { padding: 10px 20px; margin: 10px; cursor: pointer; }
 </style>
 </head>
-<body>
-
-<h1>ಯಕ್ಷಗಾನ Scratch & Win</h1>
-
-<div class="login" id="loginDiv">
+<body><h1>ಯಕ್ಷಗಾನ Scratch & Win</h1><div class="login" id="loginDiv">
   <h3>WhatsApp ಸಂಖ್ಯೆ ನಮೂದಿಸಿ</h3>
   <input type="text" id="userNumber" placeholder="WhatsApp Number">
   <button onclick="login()">Login</button>
-</div>
-
-<div class="dashboard" id="dashboardDiv" style="display:none;">
+</div><div class="dashboard" id="dashboardDiv" style="display:none;">
   <h3>Scratch Cards</h3>
   <div id="cardsContainer"></div>
   <button id="submitBtn">Prize Submit to WhatsApp</button>
   <h3>Winners Dashboard</h3>
   <div id="winnerList"></div>
   <button onclick="showAdminPanel()">Admin Panel</button>
-</div>
-
-<div class="admin-panel" id="adminDiv" style="display:none;">
+</div><div class="admin-panel" id="adminDiv" style="display:none;">
   <h3>Admin Panel</h3>
   <input type="password" id="adminPass" placeholder="Admin Password">
   <button onclick="loginAdmin()">Login</button>
@@ -45,15 +36,14 @@
     <h4>Manage Users</h4>
     <div id="usersContainer"></div>
   </div>
-</div>
-
-<script>
+</div><script>
 let users = {};
 let winners = [];
 let userDetails = [];
 const totalCards = 20;
 let prizes = Array.from({length: totalCards}, (_, i) => `Prize ${i+1}`);
 let currentUser = '';
+let prizesLocked = false; // Lock prizes after admin update
 
 function login(){
   const num = document.getElementById('userNumber').value;
@@ -76,7 +66,7 @@ function renderCards(){
     card.className = 'card';
     card.id = 'card-'+i;
     const winner = winners.find(w => w.index === i);
-    const prizeText = winner ? winner.prize : '';
+    const prizeText = winner ? winner.prize : prizes[i];
     if(winner) card.classList.add('scratched');
     card.innerHTML = `<div class='scratch-layer'></div><span class='prize-text'>${prizeText}</span>`;
     card.addEventListener('click', () => scratchCard(i));
@@ -97,6 +87,7 @@ function scratchCard(index){
   cardEl.querySelector('.scratch-layer').style.opacity = '0';
   cardEl.querySelector('.prize-text').textContent = prizes[index];
   renderWinners();
+  renderCards(); // ensures locked card shown correctly
 }
 
 function renderWinners(){
@@ -156,6 +147,7 @@ function updatePrizes(){
   for(let i=0;i<totalCards;i++){
     prizes[i] = document.getElementById(`prizeInput${i}`).value;
   }
+  prizesLocked = true; // lock prizes after update
   alert('Prizes updated successfully');
   renderCards();
 }
@@ -181,7 +173,5 @@ function removeUser(num){
   renderCards();
   alert(`Number ${num} can now scratch again`);
 }
-</script>
-
-</body>
+</script></body>
 </html>
