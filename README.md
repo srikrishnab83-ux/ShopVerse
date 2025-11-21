@@ -11,8 +11,7 @@
   .scratched .scratch-layer { opacity: 0; }
   input { padding: 10px; margin: 10px; width: 80%; }
   button { padding: 10px 20px; margin: 10px; cursor: pointer; }
-</style>
-</head>
+</style><!-- Firebase SDK --><script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script></head>
 <body><h1>ಯಕ್ಷಗಾನ Scratch & Win</h1><div class="login" id="loginDiv">
   <h3>WhatsApp ಸಂಖ್ಯೆ ನಮೂದಿಸಿ</h3>
   <input type="text" id="userNumber" placeholder="WhatsApp Number">
@@ -37,22 +36,51 @@
     <div id="usersContainer"></div>
   </div>
 </div><script>
+// Firebase Config
+const firebaseConfig = {
+  apiKey: "AIzaSyCcGujjBbE9j8G4-9yNnZcIncUDwCMNvDI",
+  authDomain: "luckywin-c8365.firebaseapp.com",
+  projectId: "luckywin-c8365",
+  storageBucket: "luckywin-c8365.appspot.com",
+  messagingSenderId: "542970385202",
+  appId: "1:542970385202:web:ca949d82b00aca9c2a7d2b",
+  measurementId: "G-4FSDQHFR8N"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
+
 let users = {};
 let winners = [];
 let userDetails = [];
 const totalCards = 20;
 let prizes = Array.from({length: totalCards}, (_, i) => `Prize ${i+1}`);
 let currentUser = '';
-let prizesLocked = false; // Lock prizes after admin update
+
+// Load data from Firebase
+function loadDataFromFirebase(){
+  database.ref('prizes').once('value', snapshot => {
+    if(snapshot.exists()) prizes = snapshot.val();
+    renderCards();
+  });
+  database.ref('winners').once('value', snapshot => {
+    if(snapshot.exists()) winners = Object.values(snapshot.val());
+    renderCards();
+    renderWinners();
+  });
+  database.ref('users').once('value', snapshot => {
+    if(snapshot.exists()) users = snapshot.val();
+  });
+}
+window.onload = loadDataFromFirebase;
 
 function login(){
   const num = document.getElementById('userNumber').value;
   if(!num) { alert('ದಯವಿಟ್ಟು ಸಂಖ್ಯೆ ನಮೂದಿಸಿ'); return; }
   if(users[num]) { alert('ನೀವು ಈಗಾಗಲೇ ಕಾರ್ಡ್ ಸ್ಕ್ರ್ಯಾಚ್ ಮಾಡಿದ್ದೀರಿ. Admin ಮೂಲಕ ರೀಸೆಟ್ ಆಗುವವರೆಗೆ ಮತ್ತೆ ಸ್ಕ್ರ್ಯಾಚ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ.'); return; }
   currentUser = num;
-  if(!userDetails.some(u => u.number === num)){
-    userDetails.push({number: num, prize: null});
-  }
+  if(!userDetails.some(u => u.number === num)) userDetails.push({number: num, prize: null});
   document.getElementById('loginDiv').style.display = 'none';
   document.getElementById('dashboardDiv').style.display = 'block';
   renderCards();
@@ -83,11 +111,12 @@ function scratchCard(index){
   users[currentUser] = prizes[index];
   const user = userDetails.find(u => u.number === currentUser);
   if(user) user.prize = prizes[index];
-  winners.push({index: index, prize: prizes[index], number: currentUser});
-  cardEl.querySelector('.scratch-layer').style.opacity = '0';
-  cardEl.querySelector('.prize-text').textContent = prizes[index];
+  const winnerData = {index: index, prize: prizes[index], number: currentUser};
+  winners.push(winnerData);
+  database.ref('users/' + currentUser).set({prize: prizes[index], cardIndex: index});
+  database.ref('winners/' + index).set(winnerData);
+  renderCards();
   renderWinners();
-  renderCards(); // ensures locked card shown correctly
 }
 
 function renderWinners(){
@@ -144,10 +173,8 @@ function renderPrizeEditor(){
 }
 
 function updatePrizes(){
-  for(let i=0;i<totalCards;i++){
-    prizes[i] = document.getElementById(`prizeInput${i}`).value;
-  }
-  prizesLocked = true; // lock prizes after update
+  for(let i=0;i<totalCards;i++) prizes[i] = document.getElementById(`prizeInput${i}`).value;
+  database.ref('prizes').set(prizes);
   alert('Prizes updated successfully');
   renderCards();
 }
@@ -168,6 +195,10 @@ function removeUser(num){
   const user = userDetails.find(u => u.number === num);
   if(user) user.prize = null;
   winners = winners.filter(w => w.number !== num);
+  database.ref('users/' + num).remove();
+  winners.forEach(w => {
+    if(w.number === num) database.ref('winners/' + w.index).remove();
+  });
   renderUsersAdmin();
   renderWinners();
   renderCards();
