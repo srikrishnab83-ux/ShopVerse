@@ -47,32 +47,21 @@ const firebaseConfig = {
   appId: "1:542970385202:web:ca949d82b00aca9c2a7d2b",
   measurementId: "G-4FSDQHFR8N"
 };
-
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 
+let totalCards = 20;
+let prizes = Array.from({length: totalCards}, (_, i) => `Prize ${i+1}`);
 let users = {};
 let winners = [];
 let userDetails = [];
-const totalCards = 20;
-let prizes = Array.from({length: totalCards}, (_, i) => `Prize ${i+1}`);
 let currentUser = '';
 
 // Load data from Firebase
 function loadDataFromFirebase(){
-  database.ref('prizes').once('value', snapshot => {
-    if(snapshot.exists()) prizes = snapshot.val();
-    renderCards();
-  });
-  database.ref('winners').once('value', snapshot => {
-    if(snapshot.exists()) winners = Object.values(snapshot.val());
-    renderCards();
-    renderWinners();
-  });
-  database.ref('users').once('value', snapshot => {
-    if(snapshot.exists()) users = snapshot.val();
-  });
+  database.ref('prizes').once('value', snapshot => { if(snapshot.exists()) prizes = snapshot.val(); renderCards(); });
+  database.ref('winners').once('value', snapshot => { if(snapshot.exists()) winners = Object.values(snapshot.val()); renderCards(); renderWinners(); });
+  database.ref('users').once('value', snapshot => { if(snapshot.exists()) users = snapshot.val(); });
 }
 window.onload = loadDataFromFirebase;
 
@@ -197,9 +186,7 @@ function removeUser(num){
   if(user) user.prize = null;
   winners = winners.filter(w => w.number !== num);
   database.ref('users/' + num).remove();
-  winners.forEach(w => {
-    if(w.number === num) database.ref('winners/' + w.index).remove();
-  });
+  winners.forEach(w => { if(w.number === num) database.ref('winners/' + w.index).remove(); });
   renderUsersAdmin();
   renderWinners();
   renderCards();
