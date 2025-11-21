@@ -36,10 +36,11 @@
     <div id="usersContainer"></div>
   </div>
 </div><script>
-// Firebase Config
+// Firebase Config with databaseURL
 const firebaseConfig = {
   apiKey: "AIzaSyCcGujjBbE9j8G4-9yNnZcIncUDwCMNvDI",
   authDomain: "luckywin-c8365.firebaseapp.com",
+  databaseURL: "https://luckywin-c8365-default-rtdb.firebaseio.com/",
   projectId: "luckywin-c8365",
   storageBucket: "luckywin-c8365.appspot.com",
   messagingSenderId: "542970385202",
