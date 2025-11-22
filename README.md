@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="kn">
+<!DOCTYPE html>
+<html lang="kn">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,19 +16,32 @@
   button:hover { background: #ff4c3b; }
   h1, h3, h4 { color: #333; }
   #cardsContainer { display: flex; flex-wrap: wrap; justify-content: center; }
-</style><!-- Firebase SDK --><script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script></head>
-<body><h1>ಯಕ್ಷಗಾನ Scratch & Win</h1><div class="login" id="loginDiv">
+</style>
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+</head>
+<body>
+
+<h1>ಯಕ್ಷಗಾನ Scratch & Win</h1>
+
+<div class="login" id="loginDiv">
   <h3>WhatsApp ಸಂಖ್ಯೆ ನಮೂದಿಸಿ</h3>
   <input type="text" id="userNumber" placeholder="WhatsApp Number">
   <button onclick="login()">Login</button>
-</div><div class="dashboard" id="dashboardDiv" style="display:none;">
+</div>
+
+<div class="dashboard" id="dashboardDiv" style="display:none;">
   <h3>Scratch Cards</h3>
   <div id="cardsContainer"></div>
   <button id="submitBtn">Prize Submit to WhatsApp</button>
   <h3>Winners Dashboard</h3>
   <div id="winnerList"></div>
   <button onclick="showAdminPanel()">Admin Panel</button>
-</div><div class="admin-panel" id="adminDiv" style="display:none;">
+</div>
+
+<div class="admin-panel" id="adminDiv" style="display:none;">
   <h3>Admin Panel</h3>
   <input type="password" id="adminPass" placeholder="Admin Password">
   <button onclick="loginAdmin()">Login</button>
@@ -39,7 +53,9 @@
     <h4>Manage Users</h4>
     <div id="usersContainer"></div>
   </div>
-</div><script>
+</div>
+
+<script>
 const firebaseConfig = {
   apiKey: "AIzaSyCcGujjBbE9j8G4-9yNnZcIncUDwCMNvDI",
   authDomain: "luckywin-c8365.firebaseapp.com",
@@ -194,5 +210,7 @@ function removeUser(num){
   renderCards();
   alert(`Number ${num} can now scratch again`);
 }
-</script></body>
+</script>
+
+</body>
 </html>
