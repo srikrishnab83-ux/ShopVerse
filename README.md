@@ -4,13 +4,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yakshagana Scratch & Win</title>
 <style>
-  body { font-family: Arial, sans-serif; text-align: center; background: #f8f4e3; }
-  .login, .dashboard, .admin-panel { margin: 20px auto; padding: 20px; border: 1px solid #ccc; background: #fff; border-radius: 10px; max-width: 400px; }
-  .card { width: 100px; height: 100px; margin: 10px; display: inline-block; background: #ccc; border-radius: 10px; line-height: 100px; font-size: 18px; cursor: pointer; position: relative; overflow: hidden; user-select: none; }
-  .scratch-layer { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #999; z-index: 2; transition: opacity 0.3s; }
+  body { font-family: Arial, sans-serif; text-align: center; background: #f8f4e3; margin:0; padding:0; }
+  .login, .dashboard, .admin-panel { margin: 20px auto; padding: 20px; border: 1px solid #ccc; background: #fff; border-radius: 15px; max-width: 400px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+  .card { width: 100px; height: 100px; margin: 10px; display: inline-block; background: #ccc; border-radius: 15px; line-height: 100px; font-size: 18px; cursor: pointer; position: relative; overflow: hidden; user-select: none; transition: transform 0.2s; }
+  .card:hover { transform: scale(1.05); }
+  .scratch-layer { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #999; z-index: 2; transition: opacity 0.3s; border-radius: 15px; }
   .scratched .scratch-layer { opacity: 0; }
-  input { padding: 10px; margin: 10px; width: 80%; }
-  button { padding: 10px 20px; margin: 10px; cursor: pointer; }
+  input { padding: 10px; margin: 10px; width: 80%; border-radius: 8px; border: 1px solid #aaa; }
+  button { padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 8px; border: none; background: #ff6f61; color: white; font-weight: bold; }
+  button:hover { background: #ff4c3b; }
+  h1, h3, h4 { color: #333; }
+  #cardsContainer { display: flex; flex-wrap: wrap; justify-content: center; }
 </style><!-- Firebase SDK --><script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script></head>
 <body><h1>ಯಕ್ಷಗಾನ Scratch & Win</h1><div class="login" id="loginDiv">
   <h3>WhatsApp ಸಂಖ್ಯೆ ನಮೂದಿಸಿ</h3>
@@ -36,7 +40,6 @@
     <div id="usersContainer"></div>
   </div>
 </div><script>
-// Firebase Config with databaseURL
 const firebaseConfig = {
   apiKey: "AIzaSyCcGujjBbE9j8G4-9yNnZcIncUDwCMNvDI",
   authDomain: "luckywin-c8365.firebaseapp.com",
@@ -57,7 +60,6 @@ let winners = [];
 let userDetails = [];
 let currentUser = '';
 
-// Load data from Firebase
 function loadDataFromFirebase(){
   database.ref('prizes').once('value', snapshot => { if(snapshot.exists()) prizes = snapshot.val(); renderCards(); });
   database.ref('winners').once('value', snapshot => { if(snapshot.exists()) winners = Object.values(snapshot.val()); renderCards(); renderWinners(); });
