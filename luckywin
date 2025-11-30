@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>ಗಣೇಶ ಯಕ್ಷಗಾನ कलಾ ಕೇಂದ್ರ, ಮುಳ್ಳೇರியா, ಕಾಸರಗೋಡು</title>
+<title>ಗಣೇಶ ಯಕ್ಷಗಾನ ಕಲಾ ಕೇಂದ್ರ, ಮುಳ್ಳೇರಿಯಾ, ಕಾಸರಗೋಡು</title>
 
 <style>
   :root{
@@ -94,7 +94,7 @@
   .btn-red{background:var(--red);color:var(--gold);}
 
   /* Admin floating button */
-  .admin-fab{position:fixed;right:14px;bottom:18px;background:var(--red);color:var(--gold);border:none;padding:12px 14px;border-radius:999px;box-shadow:0 10px 24px rgba(0,0,0,0.18);font-weight:700;cursor:pointer;z-index:1500;}
+  .admin-fab{position:fixed;right:16px;bottom:90px;background:var(--red);color:var(--gold);border:none;padding:12px 14px;border-radius:999px;box-shadow:0 10px 24px rgba(0,0,0,0.18);font-weight:700;cursor:pointer;z-index:1500;}
   .admin-fab:active{transform:translateY(1px);}
 
   /* Admin modal (hidden by default; JS will open it) */
@@ -128,13 +128,22 @@
     .card-grid{grid-template-columns:repeat(5,1fr);gap:8px;}
     .scratch-card{height:64px;font-size:13px;padding:8px;}
   }
+
+.scratch-admin-fab{
+position:fixed;right:16px;bottom:150px;background:#0b74de;color:#fff;
+border:none;padding:10px 12px;border-radius:999px;
+box-shadow:0 10px 24px rgba(0,0,0,0.18);font-weight:700;
+cursor:pointer;z-index:1500;border:3px solid rgba(255,255,255,0.12);
+}
+.scratch-admin-fab:active{transform:translateY(1px);}
+
 </style>
 </head>
 
 <body>
   <header>
     <h1>ಗಣೇಶ ಯಕ್ಷಗಾನ ಕಲಾ ಕೇಂದ್ರ, ಮುಳ್ಳೇರಿಯಾ, ಕಾಸರಗೋಡು</h1>
-    <p>ಯಕ್ಷಗಾನದ ತೆಂಕು ತಿಟ್ಟಿಯ ಶೈಲಿಯ ತರಗತಿ ಮತ್ತು ಅಭ್ಯಾಸ ಕೇಂದ್ರ</p>
+    <p>ಯಕ್ಷಗಾನದ ತೆಂಕು ತಿಟ್ಟು ಶೈಲಿಯ ತರಗತಿ ಮತ್ತು ಅಭ್ಯಾಸ ಕೇಂದ್ರ</p>
   </header>
 
   <div class="wrap">
@@ -144,7 +153,7 @@
       <div class="welcome-inner">
         <h2>🌸 ನಮ್ಮ ಕೇಂದ್ರಕ್ಕೆ ಆದರದ ಸ್ವಾಗತ 🌸</h2>
         <p>
-          ನಮ್ಮ ಶ್ರೀ ಗಣೇಶ ಯಕ್ಷಗಾನ ಕಲಾ ಕೇಂದ್ರ, ಮುಳ್ಳೇರಿಯಾಕ್ಕೆ ಆದರದ ಸ್ವಾಗತ. ಕಾಸರಗೋಡು ಜಿಲ್ಲೆಯ ಮುಳ್ಳೇರಿಯಾನಲ್ಲಿ ನೆಲೆಸಿರುವ ನಮ್ಮ ಕೇಂದ್ರವು, ಕರ್ನಾಟಕದ ಕರಾವಳಿ ಭಾಗದ ಶ್ರೇಷ್ಠ ಕಲಾಪ್ರಕಾರವಾದ ಯಕ್ಷಗಾನದ 'ತೆಂಕು ತಿಟ್ಟು' ಶೈಲಿಯನ್ನು ಮುಂದಿನ ಪೀಳಿಗೆಗೆ ತಲುಪಿಸುವ ಕಾರ್ಯದಲ್ಲಿ ತೊಡಗಿದ್ದೇವೆ.
+          ನಮ್ಮ ಶ್ರೀ ಗಣೇಶ ಯಕ್ಷगಾನ ಕಲಾ ಕೇಂದ್ರ, ಮುಳ್ಳೇರಿಯಾಕ್ಕೆ ಆದರದ ಸ್ವಾಗತ. ಕಾಸರಗೋಡು ಜಿಲ್ಲೆಯ ಮುಳ್ಳೇರಿಯಾನಲ್ಲಿ ನೆಲೆಸಿರುವ ನಮ್ಮ ಕೇಂದ್ರವು, ಕರ್ನಾಟಕದ ಕರಾವಳಿ ಭಾಗದ ಶ್ರೇಷ್ಠ ಕಲಾಪ್ರಕಾರವಾದ ಯಕ್ಷಗಾನದ 'ತೆಂಕು ತಿಟ್ಟು' ಶೈಲಿಯನ್ನು ಮುಂದಿನ ಪೀಳಿಗೆಗೆ ತಲುಪಿಸುವ ಕಾರ್ಯದಲ್ಲಿ ತೊಡಗಿದ್ದೇವೆ.
         </p>
       </div>
     </section>
@@ -208,7 +217,7 @@
     </section>
 
     <!-- Admission -->
-    <section class="card" aria-label="ಪ್ರವೇಶ">
+    <section class="card" aria-label="ಪ್ರवೇಶ">
       <div class="section-title">ಪ್ರವೇಶ ಫಾರ್ಮ್</div>
       <p class="muted center">ನಿಮ್ಮ ವಿವರಗಳನ್ನು ಕಳುಹಿಸಲು ಕೆಳಗಿನ ಬಟನ್ ಒತ್ತಿ — ನಾವು ಜವಾಬ್ದಾರಿ ತೆಗೆದುಕೊಳ್ಳುತ್ತೇವೆ.</p>
 
@@ -216,7 +225,7 @@
         <div class="form-field"><label>ಹೆಸರು</label><input id="ad_name" type="text" placeholder="ಹೆಸರು"></div>
         <div class="form-field"><label>ವಯಸ್ಸು</label><input id="ad_age" type="number" placeholder="ವಯಸ್ಸು"></div>
         <div class="form-field"><label>ಮೊಬೈಲ್ ಸಂಖ್ಯೆ</label><input id="ad_phone" type="tel" placeholder="ಮೊಬೈಲ್"></div>
-        <div class="form-field"><label>ಸಂದೇಶ</label><textarea id="ad_msg" rows="3" placeholder="ಸಂದೇಶ (ಐಚ್ಛಿಕ)"></textarea></div>
+        <div class="form-field"><label>ಸಂದೇಶ</label><textarea id="ad_msg" rows="3" placeholder="ಸಂದೇಶ (ಐಚ್ಥಿಕ)"></textarea></div>
 
         <div class="center" style="margin-top:6px;">
           <button id="admitBtn" class="btn btn-red" onclick="openWhatsAppForAdmission()">WhatsApp ಮೂಲಕ ಕಳುಹಿಸಿ</button>
@@ -230,8 +239,8 @@
       <p class="muted">ಕಾರ್ಯಕ್ರಮಕ್ಕೆ ಬುಕಿಂಗ್ ಮಾಡಲು ಕೆಳಗಿನ ಫಾರ್ಮ್ ಭರ್ತಿ ಮಾಡಿ — ಬುಕಿಂಗ್ ವಿವರಗಳು WhatsApp ಮೂಲಕ ಕಳುಹಿಸಲ್ಪಡುತ್ತವೆ.</p>
       <div style="max-width:720px;margin:8px auto 0;">
         <div class="form-field"><label>ಹೆಸರು</label><input id="bk_name" type="text" placeholder="ಹೆಸರು"></div>
-        <div class="form-field"><label>ಸ್ಥಳ</label><input id="bk_place" type="text" placeholder="ಸ್ಥಳ (ನಿಮ್ಮ ನಗರದ ಹೆಸರು)"></div>
-        <div class="form-field"><label>ಕಾರ્યಕ್ರಮ ಸ್ಥಳ</label><input id="bk_prog_place" type="text" placeholder="ಕಾರ್ಯಕ್ರಮ ನಡೆಯುವ ಸ್ಥಳ"></div>
+        <div class="form-field"><label>ಸ್ಥಳ</label><input id="bk_place" type="text" placeholder="ಸ್ಥಳ (ನಿಮ್ಮ City's ಹೆಸರು)"></div>
+        <div class="form-field"><label>ಕಾರ್ಯಕ್ರಮ ಸ್ಥಳ</label><input id="bk_prog_place" type="text" placeholder="ಕಾರ್ಯಕ್ರಮ ನಡೆಯುವ ಸ್ಥಳ"></div>
         <div class="form-field"><label>ಕಾರ್ಯಕ್ರಮ ದಿನಾಂಕ</label><input id="bk_date" type="date"></div>
         <div class="form-field"><label>ಸಮಯ</label><input id="bk_time" type="time"></div>
 
@@ -258,7 +267,7 @@
     <!-- SCRATCH & WIN SECTION (ADDED) -->
     <section id="scratchCardSection" class="card scratch-wrap" aria-label="Scratch and Win">
       <div class="section-title">Scratch & Win — ಸ್ಕ್ರ್ಯಾಚ್ ಮಾಡಿ ಗೆಲುವು ಪಡೆದುಕೊಳ್ಳಿ</div>
-      <p class="muted">WhatsApp ನಂಬರ್ ಬಳಸಿ ಲಾಗಿನ್ ಮಾಡಿ. ಪ್ರತಿಯೊಬ್ಬ ನಂಬರ್ ಒಂದೇ ಬಾರಿ ಮಾತ್ರ ಒಂದು ಕಾರ್ಡ್ ಸ್ಕ್ರ್ಯಾಚ್ ಮಾಡಬಹುದು. ಒಮ್ಮೆ ಕಾರ್ಡ್ ಸ್ಕ್ರ್ಯಾಚ್ ಆದ ಮೇಲೆ ಅದು ಮುಕ್ತಾಯಗೊಂಡಂತೆ ಸಾರ್ವಜನಿಕವಾಗಿ ಕಾಣುತ್ತದೆ.</p>
+      <p class="muted">WhatsApp ನಂಬರ್ ಬಳಸಿ ಲಾಗಿನ್ ಮಾಡಿ. ಪ್ರತಿಯೊಬ್ಬ ನಂಬರ್ ಒಂದೇ ಬಾರಿ ಮಾತ್ರ ಒಂದು ಕಾರ್ಡ್ ಸ್ಕ್ರ್ಯಾಚ್ ಮಾಡಬಹುದು. ಒಮ್ಮೆ ಕಾರ್ಡ್ ಸ್ಕ್ರ್ಯಾಚ್ ಆದ ಮೇಲೆ ಅದು ಮುಕ್ತಾಯಗೊಂಡಂತೆ ಸಾರ್ವಜನಿಕವಾಗಿ ಕಾಣಿಸುತ್ತದೆ.</p>
 
       <div id="scratchLogin" class="scratch-login">
         <input id="scratchPhone" type="tel" placeholder="WhatsApp ಸಂಖ್ಯೆ (ಉದಾ: 9198xxxxxxxx)" style="padding:8px;border-radius:8px;border:1px solid #ddd;">
@@ -279,7 +288,7 @@
         </div>
 
         <div style="margin-top:8px;font-size:13px;color:var(--muted);">
-          ಗೆದ್ದರೆ, ಬಂತು ಸಂದೇಶವು 9148014768 ಗೆ WhatsApp ಮೂಲಕ ಕಳುಹಿಸಲು ದಶಕವಿದೆ — ನಾವು ನಿಮ್ಮನ್ನು WhatsApp ಚಾಟ್‌ಗೆ ರೀಡೈರೆಕ್ಟ್ ಮಾಡುತ್ತೇವೆ.
+          ನೀವು ಗೆದ್ದಿದ್ದರೆ, ನಿಮ್ಮ ಗೆಲುವಿನ ವಿವರವನ್ನು 9148014768 ಗೆ WhatsApp ಮೂಲಕ ಕಳುಹಿಸಬೇಕು — ನಾವು ನಿಮ್ಮನ್ನು WhatsApp ಚಾಟ್‌ಗೆ ರೀಡೈರೆಕ್ಟ್ ಮಾಡುತ್ತೇವೆ.
         </div>
       </div>
     </section>
@@ -310,9 +319,6 @@
 
   <!-- Admin floating button -->
   <button id="adminFab" class="admin-fab" aria-label="ನಿರ್ವಹಣಾ ವಿಭಾಗ">🔒 ನಿರ್ವಹಣಾ ವಿಭಾಗ</button>
-
-  <!-- Scratch Admin floating button -->
-  <button id="scratchAdminFab" class="admin-fab" style="right:80px;bottom:18px;background:#b36b00;" aria-label="Scratch Admin">🎰 Scratch Admin</button>
 
   <!-- Admin modal (compact mobile-friendly sheet) -->
   <div id="adminModal" class="admin-modal" role="dialog" aria-modal="true" aria-hidden="true">
@@ -386,11 +392,33 @@
         </div>
 
         <div class="admin-card">
-          <div class="admin-title">ಯशಸ್ವಿ ವಿದ್ಯಾರ್ಥಿ ಸೇರಿಸಿ</div>
+          <div class="admin-title">ಯಶಸ್ವಿ ವಿದ್ಯಾರ್ಥಿ ಸೇರಿಸಿ</div>
           <input id="admin_student_photo" class="admin-input" placeholder="ಚಿತ್ರ URL">
           <input id="admin_student_name" class="admin-input" placeholder="ಹೆಸರು">
           <textarea id="admin_student_desc" class="admin-input" rows="2" placeholder="ಸಣ್ಣ ವಿವರಣೆ"></textarea>
           <div class="admin-actions"><button id="addStudentBtn" class="btn">ಸೇರಿಸಿ</button></div>
+        </div>
+
+        <div class="admin-card">
+          <div class="admin-title">Scratch & Win — ನಿರ್ವಹಣೆ</div>
+          <div class="muted-small">ಪ್ರತಿ ಕಾರ್ಡ್‌ಗಾಗಿ ಬಹುಮಾನವನ್ನು ಇಲ್ಲಿಗೆ ಸೆಟ್ ಮಾಡಿ (25 ಕಾರ್ಡ್‌ಗಳು).</div>
+
+          <!-- Prizes inputs (25) -->
+          <div id="prizesList" style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:8px;max-height:260px;overflow:auto;padding:6px;border:1px dashed #eee;border-radius:8px;">
+            <!-- generated by JS -->
+          </div>
+
+          <div style="margin-top:8px;display:flex;gap:8px;">
+            <button id="savePrizesBtn" class="btn">ಪ್ರೈಸುಗಳನ್ನು ಉಳಿಸಿ</button>
+            <button id="resetCardsBtn" class="btn" style="background:#eee;color:#111;">ಕಾರ್ಡ್ ಪುನಃಪ್ರಾರಂಭ</button>
+          </div>
+
+          <hr style="margin:10px 0;">
+
+          <div class="muted-small">ಲॉगಿನ್ ಮಾಡಿದ ವಿಸಿಟರ್ಸ್ (WhatsApp ನಂಬರ್) — ತೆಗೆಯಲು 'Remove' ಒತ್ತಿ</div>
+          <div id="usersList" style="max-height:180px;overflow:auto;margin-top:8px;padding:6px;border:1px solid #f2f2f2;border-radius:8px;"></div>
+
+          <div class="admin-actions" style="margin-top:8px;"><button id="refreshScratchAdminBtn" class="btn">Refresh</button></div>
         </div>
 
         <div class="admin-card">
@@ -403,51 +431,27 @@
 
     </div> <!-- admin-sheet end -->
   </div> <!-- admin-modal end -->
+<!-- Scratch Admin Button -->
+<button id="scratchAdminFab" class="scratch-admin-fab">🃏 Scratch ನಿರ್ವಹಣೆ</button>
 
-  <!-- Scratch Admin modal -->
-  <div id="scratchAdminModal" class="admin-modal" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="admin-sheet" role="document">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-        <div style="display:flex;align-items:center;gap:8px;">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="6" fill="#b36b00"/><path d="M7 11V9a5 5 0 1110 0v2" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <div style="font-weight:800;color:#b36b00;">Scratch Admin</div>
-        </div>
-        <button id="scratchAdminClose" style="background:#eee;border:0;padding:8px 10px;border-radius:8px;">ಮುಚ್ಚಿ</button>
-      </div>
+<!-- Scratch Admin Modal -->
+<div id="scratchAdminModal" class="admin-modal" style="display:none;">
+<div class="admin-sheet">
+<h3 style="color:#0b74de;font-weight:800;">Scratch & Win — Admin</h3>
+<button id="scratchAdminClose" class="btn">ಮುಚ್ಚಿ</button>
 
-      <div class="admin-card">
-        <div class="admin-title">Scratch Admin Login</div>
-        <input id="scratchAdminPwd" class="admin-input" type="password" placeholder="Password">
-        <div class="admin-actions"><button id="scratchAdminLoginBtn" class="btn">Login</button></div>
-      </div>
+<h4>ಪ್ರೈಸ್ಸ್ ನಿರ್ವಹಣೆ (25 ಕಾರ್ಡ್‌ಗಳು)</h4>
+<div id="scratchPrizesList" style="max-height:250px;overflow:auto;"></div>
+<button id="scratchSavePrizesBtn" class="btn">ಉಳಿಸಿ</button>
+<button id="scratchResetCardsBtn" class="btn">Reset</button>
 
-      <div id="scratchAdminControls" style="display:none;">
-        <div class="admin-card">
-          <div class="admin-title">Scratch — Prize Editor (25 cards)</div>
-          <div id="prizesList" style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:8px;max-height:260px;overflow:auto;padding:6px;border:1px dashed #eee;border-radius:8px;">
-            <!-- generated by JS -->
-          </div>
-          <div style="margin-top:8px;display:flex;gap:8px;">
-            <button id="savePrizesBtn" class="btn">Save Prizes</button>
-            <button id="resetCardsBtn" class="btn" style="background:#eee;color:#111;">Reset Cards</button>
-          </div>
-        </div>
+<h4>Winners Dashboard</h4>
+<div id="scratchUsersList" style="max-height:300px;overflow:auto;"></div>
+<button id="scratchRefreshBtn" class="btn">Refresh</button>
 
-        <div class="admin-card">
-          <div class="admin-title">Players (Remove to allow replay)</div>
-          <div id="usersList" style="max-height:220px;overflow:auto;margin-top:8px;padding:6px;border:1px solid #f2f2f2;border-radius:8px;"></div>
-          <div class="admin-actions" style="margin-top:8px;"><button id="refreshScratchAdminBtn" class="btn">Refresh</button></div>
-        </div>
+</div>
+</div>
 
-        <div class="admin-card">
-          <div class="admin-title">Dashboard — Opened Cards</div>
-          <div id="openedCardsAdmin" style="max-height:220px;overflow:auto;margin-top:8px;padding:6px;border:1px solid #f2f2f2;border-radius:8px;"></div>
-          <div class="admin-actions" style="margin-top:8px;"><button id="refreshOpenedAdminBtn" class="btn">Refresh</button></div>
-        </div>
-
-      </div>
-    </div>
-  </div>
 
   <!-- Image modal for fullscreen gallery view -->
   <div id="imgModal" aria-hidden="true"><img src="" alt="fullscreen image"></div>
@@ -458,7 +462,7 @@
        Firebase + Admin Logic
        (existing Firestore app remains unchanged)
        ------------------------------- */
-    import { initializeApp, getApps, getApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
     import {
       getFirestore, collection, addDoc, getDocs, onSnapshot,
       doc, setDoc, deleteDoc, query, orderBy
@@ -475,12 +479,7 @@
       measurementId: "G-VYXM03K87H"
     };
 
-    let app;
-    try {
-      app = getApp();
-    } catch(e){
-      app = initializeApp(firebaseConfig);
-    }
+    const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
 
     /* ---------- WhatsApp: Admission & Booking (fixed) ---------- */
@@ -492,7 +491,7 @@
       const a=document.getElementById('ad_age').value.trim();
       const p=document.getElementById('ad_phone').value.trim();
       const m=document.getElementById('ad_msg').value.trim();
-      const text=encodeURIComponent(`ಪ್ರवೇಶ:\nಹೆಸರು: ${n}\nವಯಸ್ಸು: ${a}\nಮೊಬೈಲ್: ${p}\nಸಂದೇಶ: ${m}`);
+      const text=encodeURIComponent(`ಪ್ರವೇಶ:\nಹೆಸರು: ${n}\nವಯಸ್ಸು: ${a}\nಮೊಬೈಲ್: ${p}\nಸಂದೇಶ: ${m}`);
       window.open(`https://wa.me/${WA_NUMBER}?text=${text}`,'_blank');
     }
 
@@ -671,7 +670,9 @@
         adminControls.style.display='block';
         adminPwd.parentElement.style.display='none';
         loadAdminLists();
-      } else alert('⚠️ ತಪ್ಪಾದ ಪಾಸ್ೞFord');
+        // also init scratch admin UI
+        initScratchAdmin();
+      } else alert('⚠️ ತಪ್ಪಾದ ಪಾಸ್‌ವರ್ಡ್');
     };
 
     async function loadAdminLists(){
@@ -844,7 +845,7 @@
       luckyApp = initializeApp(luckyConfig, 'luckywinApp');
     } catch(e){
       // if already initialized, get the named app
-      try{ luckyApp = getApp('luckywinApp'); }catch(err){ luckyApp = initializeApp(luckyConfig, 'luckywinApp'); }
+      luckyApp = initializeApp(luckyConfig, 'luckywinApp');
     }
     const luckyDb = getDatabase(luckyApp);
 
@@ -876,6 +877,7 @@
       if(!raw) return '';
       let p = raw.replace(/[^\d]/g,'');
       if(p.length===10) p = '91'+p;
+      // if already 12-digit with country code, keep
       return p;
     }
 
@@ -896,9 +898,11 @@
         div.dataset.card = key;
         if(meta.opened){
           div.classList.add('open');
-          div.innerHTML = `<div>ಕಾರುಡ್ ${key} — ${meta.prize || '---'}</div>`;
+          div.innerHTML = `<div>${meta.prize || ''}</div>`;
         } else {
-          div.innerHTML = `<div>ಕಾರ್ಡ್ ${key}</div>`;
+          // closed card - clickable if user hasn't claimed already
+          div.innerHTML = ``;
+          // click handler
           div.addEventListener('click', async ()=>{
             const viewer = normalizePhoneRaw(viewerPhone);
             if(!viewer){
@@ -908,7 +912,7 @@
             // check if this user already has a won entry
             const userSnap = await dbGet(dbRef(luckyDb, 'users/' + viewer));
             if(userSnap.exists()){
-              alert('ಈ ನಂಬರ್ ಈಗಾಗಲೇ ಒಂದು ಕಾರ್ಡ್ ಸ್ಕ್ರ್ಯಾಚ್ ಮಾಡಿದೆ. ದಯವಿಟ್ಟು admin ಮೂಲಕ ಮರುಹೊಂದಿಸಿ.');
+              alert('ಈ ನಂಬರ್ ಈಗಾಗಲೇ ಒಂದು ಕಾರ್ಡ್ ಸ್ಕ್ರ್ಯಾಚ್ ಮಾಡಿದೆ. ಅಪೇಕ್ಷೆಯಲ್ಲಿ ದಯವಿಟ್ಟು admin ನೋಡುವ ಮೂಲಕ ಮರುಹೊಂದಿಸಿ.');
               return;
             }
 
@@ -917,10 +921,12 @@
             const cardState = cardSnap.exists() ? cardSnap.val() : null;
             if(cardState && cardState.opened){
               alert('ಈ ಕಾರ್ಡ್ ಈಗಾಗಲೇ ಓಪನ್ ಆಗಿದೆ. ದಯವಿಟ್ಟು ಬೇರೆ ಒಂದು ಕಾರ್ಡ್ ಪ್ರಯತ್ನಿಸಿ.');
+              // refresh UI
               renderCardsForViewer(viewerPhone);
               return;
             }
 
+            // mark card as opened and record user
             const prizeText = (cardState && cardState.prize) ? cardState.prize : 'Unknown prize';
             const updates = {};
             updates['/cards/' + key + '/opened'] = true;
@@ -930,10 +936,14 @@
 
             try{
               await dbUpdate(dbRef(luckyDb, '/'), updates);
-              alert(`ಹಬ್ಬ! ನೀವು ಕಾರ್ಡ್ ${key} ತೆರೆದಿದ್ದೀರಿ — ಬಹುಮಾನ: ${prizeText}\nನೀವು WhatsApp ಮೂಲಕ 9148014768 ಗೆ ವಿವರ ಕಳುಹಿಸಲಾಗುವುದು.`);
+              // show result and redirect to whatsapp chat with prize details
+              alert(`ಹಬ್ಬ! ನೀವು ಕಾರ್ಡ್ ${key} ತೆರೆದಿದ್ದೀರಿ — ಬಹುಮಾನ: ${prizeText}\nನಿಮ್ಮ ಗೆಲುವಿನ ವಿವರ 9148014768 ಗೆ WhatsApp ಮೂಲಕ ಕಳುಹಿಸಲಾಗುವುದು.`);
               const message = encodeURIComponent(`ನಾನು ಗೆದ್ದಿದೆ — ಕಾರ್ಡ್ ${key}\n ಬಹುಮಾನ: ${prizeText}\nನನ್ನ WhatsApp: ${viewer}`);
+              // Open chat to winners number with message
               window.open(`https://wa.me/${WINNERS_WHATSAPP}?text=${message}`, '_blank');
+              // refresh UI
               renderCardsForViewer(viewerPhone);
+              // Also refresh admin lists
               loadScratchUsersToAdmin();
             } catch(err){
               console.error('Error claiming card', err);
@@ -946,12 +956,41 @@
     }
 
     // Login / start
-    if(scratchLoginBtn){
-      scratchLoginBtn.addEventListener('click', async ()=>{
-        const p = normalizePhoneRaw(scratchPhoneInput.value);
-        if(!p){ scratchStatus.textContent = 'ದಯವಿಟ್ಟು ಮಾನ್ಯ ಫೋನ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ (10 ಡಿಜಿಟ್ ಅಥವಾ 91-prefixed).'; return; }
-        sessionStorage.setItem('scratchPhone', p);
-        scratchStatus.textContent = `ಲಾಗಿನ್: +${p}. ಕಾರ್ಡ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ...`;
+    scratchLoginBtn.addEventListener('click', async ()=>{
+      const p = normalizePhoneRaw(scratchPhoneInput.value);
+      if(!p){ scratchStatus.textContent = 'ದಯವಿಟ್ಟು ಮಾನ್ಯ ಫೋನ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ (10 ಡಿಜಿಟ್ ಅಥವಾ 91-prefixed).'; return; }
+      // store a lightweight session in sessionStorage
+      sessionStorage.setItem('scratchPhone', p);
+      scratchStatus.textContent = `ಲಾಗಿನ್: +${p}. ಕಾರ್ಡ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ...`;
+      scratchControls.style.display = 'block';
+      await renderCardsForViewer(p);
+      // check if already used
+      const userSnap = await dbGet(dbRef(luckyDb, 'users/' + p));
+      if(userSnap.exists()){
+        scratchStatus.textContent = `ನೀವು ಈಗಾಗಲೇ ಕಾರ್ಡ್ ${userSnap.val().card} ಸ್ಕ್ರ್ಯಾಚ್ ಮಾಡಿದ್ದೀರಿ — ಬಹುಮಾನ: ${userSnap.val().prize}.`;
+      } else {
+        scratchStatus.textContent = `ಸ್ವಾಗತ! ಯಾವುದೇ ಒಂದು ಕಾರ್ಡ್ ಸ್ಕ್ರ್ಯಾಚ್ ಮಾಡಿ.`;
+      }
+    });
+
+    // allow quick login by pressing enter in phone input
+    scratchPhoneInput.addEventListener('keydown', (e)=>{
+      if(e.key === 'Enter'){ scratchLoginBtn.click(); }
+    });
+
+    // Logout
+    scratchLogout.addEventListener('click', ()=>{
+      sessionStorage.removeItem('scratchPhone');
+      scratchControls.style.display = 'none';
+      scratchStatus.textContent = 'ಲಾಗೌಟ್ ಆಗಿದ್ದೀರಿ.';
+      scratchPhoneInput.value = '';
+    });
+
+    // on load: if session exists restore
+    window.addEventListener('load', async ()=>{
+      const p = sessionStorage.getItem('scratchPhone');
+      if(p){
+        scratchPhoneInput.value = p;
         scratchControls.style.display = 'block';
         await renderCardsForViewer(p);
         const userSnap = await dbGet(dbRef(luckyDb, 'users/' + p));
@@ -960,42 +999,7 @@
         } else {
           scratchStatus.textContent = `ಸ್ವಾಗತ! ಯಾವುದೇ ಒಂದು ಕಾರ್ಡ್ ಸ್ಕ್ರ್ಯಾಚ್ ಮಾಡಿ.`;
         }
-      });
-    }
-
-    // allow quick login by pressing enter in phone input
-    if(scratchPhoneInput){
-      scratchPhoneInput.addEventListener('keydown', (e)=>{
-        if(e.key === 'Enter'){ scratchLoginBtn.click(); }
-      });
-    }
-
-    // Logout
-    if(scratchLogout){
-      scratchLogout.addEventListener('click', ()=>{
-        sessionStorage.removeItem('scratchPhone');
-        scratchControls.style.display = 'none';
-        scratchStatus.textContent = 'ಲಾಗೌಟ್ ಆಗಿದ್ದೀರಿ.';
-        scratchPhoneInput.value = '';
-      });
-    }
-
-    // on load: if session exists restore
-    window.addEventListener('load', async ()=>{
-      const p = sessionStorage.getItem('scratchPhone');
-      if(p && document.getElementById('scratchPhone')){
-        document.getElementById('scratchPhone').value = p;
-        document.getElementById('scratchControls').style.display = 'block';
-        await renderCardsForViewer(p);
-        const userSnap = await dbGet(dbRef(luckyDb, 'users/' + p));
-        if(userSnap.exists()){
-          scratchStatus.textContent = `ನೀವು ಈಗಾಗಲೇ ಕಾರ್ಡ್ ${userSnap.val().card} ಸ್ಕ್ರ್ಯಾಚ್ ಮಾಡಿದ್ದೀರಿ — ಬಹುಮಾನ: ${userSnap.val().prize}.`;
-        } else {
-          scratchStatus.textContent = `ಸ್ವಾಗತ! ಯಾವುದೇ ಒಂದು ಕಾರ್ಡ್ ಸ್ಕ್ರ್ಯಾಚ್ ಮಾಡಿ.`;
-        }
       }
-      // also load public opened cards list
-      loadOpenedCardsPublic();
     });
 
     /* ---------- Admin Scratch helpers ---------- */
@@ -1008,23 +1012,28 @@
         div.style.display = 'flex';
         div.style.gap = '8px';
         div.style.alignItems = 'center';
-        div.innerHTML = `<div style="width:40px;font-weight:700;color:#b36b00;">#${i}</div>
+        div.innerHTML = `<div style="width:40px;font-weight:700;color:var(--red);">#${i}</div>
                          <input id="prize_input_${i}" placeholder="Prize for card ${i}" class="admin-input" style="min-width:140px;">`;
         prizesList.appendChild(div);
       }
+      // load existing prizes from DB
       loadPrizesToAdmin();
+      // load users list
       loadScratchUsersToAdmin();
 
       savePrizesBtn.onclick = async ()=>{
+        // collect all prizes and save to DB
         const updates = {};
         for(let i=1;i<=TOTAL_CARDS;i++){
           const v = document.getElementById('prize_input_' + i).value.trim();
           updates['cards/' + i + '/prize'] = v || `Prize ${i}`;
+          // do not change opened/openedBy unless admin wants to reset
         }
         try{
           await dbUpdate(dbRef(luckyDb, '/'), updates);
-          alert('ಪ್ರೈಸ್ ಗಳು ಉಳಿಸಲಾಗಿದೆ');
+          alert('ಪ್ರೈಸ್ ಗಳನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ಉಳಿಸಲಾಗಿದೆ');
           loadPrizesToAdmin();
+          // refresh visible cards if any user logged in
           const current = sessionStorage.getItem('scratchPhone');
           if(current) renderCardsForViewer(current);
         } catch(e){
@@ -1034,7 +1043,7 @@
       };
 
       resetCardsBtn.onclick = async ()=>{
-        if(!confirm('ಎಲ್ಲಾ ಕಾರ್ಡ್‌ಗಳನ್ನು ಮರುಸ್ಥಾಪಿಸಲು ನೀವು ಖಚಿತರೇ?')) return;
+        if(!confirm('ಎಲ್ಲಾ ಕಾರ್ಡ್‌ಗಳನ್ನು ಮರುಸ್ಥಾಪಿಸಲು ನೀವು ಖಚಿತರೇ? ಇದು ಎಲ್ಲ ಓಪನ್ ಸ್ಟೇಟಸ್ ಅನ್ನು ರಿಸೆಟ್ ಮಾಡುತ್ತದೆ ಮತ್ತು ಬಳಕೆದಾರರ ದಾಖಲೆಗಳನ್ನು ಅಳಿಸಬಹುದು.')) return;
         const updates = {};
         for(let i=1;i<=TOTAL_CARDS;i++){
           updates['cards/' + i + '/opened'] = false;
@@ -1043,19 +1052,18 @@
         }
         try{
           await dbUpdate(dbRef(luckyDb, '/'), updates);
+          // remove users subtree
           await dbRemove(dbRef(luckyDb, 'users'));
-          alert('ಎಲ್ಲಾ ಕಾರ್ಡ್‌ಗಳು ಮರುಸ್ಥಾಪಿಸಲ್ಪಟ್ಟಿವೆ');
+          alert('ಎಲ್ಲಾ ಕಾರ್ಡ್‌ಗಳು ಮರುಸ್ಥಾಪಿಸಲ್ಪಟ್ಟಿವೆ ಮತ್ತು ಬಳಕೆದಾರ ಡೇಟಾ ಅಳಿಸಲ್ಪಟ್ಟಿದೆ');
           loadPrizesToAdmin();
           loadScratchUsersToAdmin();
-          loadOpenedCardsAdmin();
-          loadOpenedCardsPublic();
         } catch(e){
           console.error(e);
           alert('Error resetting cards');
         }
       };
 
-      refreshScratchAdminBtn.onclick = ()=>{ loadPrizesToAdmin(); loadScratchUsersToAdmin(); loadOpenedCardsAdmin(); };
+      refreshScratchAdminBtn.onclick = ()=>{ loadPrizesToAdmin(); loadScratchUsersToAdmin(); };
     }
 
     async function loadPrizesToAdmin(){
@@ -1080,7 +1088,7 @@
         const u = users[phone];
         html += `<div style="display:flex;align-items:center;justify-content:space-between;padding:6px;border-bottom:1px solid #f2f2f2;">
                   <div style="flex:1;">
-                    <div style="font-weight:700;color:#b36b00;">${u.phone}</div>
+                    <div style="font-weight:700;color:var(--red);">${u.phone}</div>
                     <div style="font-size:13px;color:#444;">Card: ${u.card} • Prize: ${u.prize || '---'}</div>
                   </div>
                   <div style="display:flex;gap:6px;">
@@ -1091,72 +1099,42 @@
       usersListEl.innerHTML = html;
     }
 
+    // make removeScratchUser available globally
     window.removeScratchUser = async function(phone){
-      if(!confirm(`ನೀವು ${phone} ಅನ್ನು ಅಳಿಸಲು ಖಚಿತರಾ?`)) return;
+      if(!confirm(`ನೀವು ${phone} ಅನ್ನು ಅಳಿಸಲು ಖಚಿತರಾ? ಹಾಗಾದರೆ ಈ ನಂಬರ್ ಮತ್ತೆ ಕಾರ್ಡ್ ಸ್ಕ್ರ್ಯಾಚ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ.`)) return;
       try{
+        // fetch user's card to unset openedBy on that card
         const userSnap = await dbGet(dbRef(luckyDb, 'users/' + phone));
         if(userSnap.exists()){
           const user = userSnap.val();
           const cardNum = user.card;
+          // unset card opened fields
           await dbUpdate(dbRef(luckyDb, '/'), {
             ['cards/' + cardNum + '/opened']: false,
             ['cards/' + cardNum + '/openedBy']: null,
             ['cards/' + cardNum + '/openedAt']: null
           });
         }
+        // remove user node
         await dbRemove(dbRef(luckyDb, 'users/' + phone));
         alert('User removed');
         loadScratchUsersToAdmin();
+        // refresh current viewer if matches
         const current = sessionStorage.getItem('scratchPhone');
         if(current === phone) {
           sessionStorage.removeItem('scratchPhone');
-          if(document.getElementById('scratchControls')) document.getElementById('scratchControls').style.display = 'none';
-          if(document.getElementById('scratchPhone')) document.getElementById('scratchPhone').value = '';
+          scratchControls.style.display = 'none';
+          scratchPhoneInput.value = '';
+          scratchStatus.textContent = 'ನಿಮ್ಮ ನಂಬರ್ ಅಳಿಸಲಾಗಿದೆ. ನೀವು ಪುನಃ ಲಾಗಿನ್ ಮಾಡಬಹುದು.';
         }
-        loadOpenedCardsPublic();
-        loadOpenedCardsAdmin();
       } catch(e){
         console.error(e);
         alert('Error removing user');
       }
     }
 
-    async function loadOpenedCardsAdmin(){
-      const snap = await dbGet(dbRef(luckyDb, 'cards'));
-      const cards = snap.exists() ? snap.val() : {};
-      const container = document.getElementById('openedCardsAdmin');
-      if(!container) return;
-      let html = '';
-      Object.keys(cards).forEach(k=>{
-        const c = cards[k];
-        if(c && c.opened){
-          html += `<div style="padding:6px;border-bottom:1px solid #eee;">
-                    <div style="font-weight:700;">Card ${k} — ${c.prize || '---'}</div>
-                    <div style="font-size:13px;color:#444;">By: ${c.openedBy || '---'} at ${c.openedAt ? new Date(c.openedAt).toLocaleString() : '---'}</div>
-                  </div>`;
-        }
-      });
-      container.innerHTML = html || '<div class="muted">No opened cards yet</div>';
-    }
-
-    async function loadOpenedCardsPublic(){
-      const snap = await dbGet(dbRef(luckyDb, 'cards'));
-      const cards = snap.exists() ? snap.val() : {};
-      const container = document.getElementById('openedList');
-      if(!container) return;
-      let html = '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;">';
-      Object.keys(cards).forEach(k=>{
-        const c = cards[k];
-        if(c && c.opened){
-          html += `<div style="padding:8px;border-radius:8px;border:1px solid #eee;background:#fff9f0;">
-                    <div style="font-weight:800;color:var(--red);">Card ${k}</div>
-                    <div style="font-size:13px;color:#444;">${c.prize || '---'}</div>
-                  </div>`;
-        }
-      });
-      html += '</div>';
-      container.innerHTML = html;
-    }
+    // expose functions to global (for admin remove button to call)
+    window.loadScratchUsersToAdmin = loadScratchUsersToAdmin;
 
     // initial ensure cards exist: if no cards defined, seed basic prize entries (admin can change)
     (async function ensureSeedCards(){
@@ -1170,30 +1148,67 @@
       }
     })();
 
-    // Scratch Admin modal logic (floating button)
-    const scratchAdminFab = document.getElementById('scratchAdminFab');
-    const scratchAdminModal = document.getElementById('scratchAdminModal');
-    const scratchAdminClose = document.getElementById('scratchAdminClose');
-    const scratchAdminPwd = document.getElementById('scratchAdminPwd');
-    const scratchAdminLoginBtn = document.getElementById('scratchAdminLoginBtn');
-    const scratchAdminControls = document.getElementById('scratchAdminControls');
-
-    scratchAdminFab.onclick = ()=>{ scratchAdminModal.style.display='flex'; scratchAdminModal.scrollTo(0,0); };
-    scratchAdminClose.onclick = ()=>{ scratchAdminModal.style.display='none'; };
-
-    scratchAdminLoginBtn.onclick = ()=>{
-      if(scratchAdminPwd.value === 'admin123'){
-        scratchAdminControls.style.display='block';
-        scratchAdminPwd.parentElement.style.display='none';
-        initScratchAdmin();
-        loadOpenedCardsAdmin();
-      } else alert('Wrong password');
-    };
-
-    // refresh opened cards in admin
-    document.getElementById('refreshOpenedAdminBtn').onclick = ()=> loadOpenedCardsAdmin();
-
     /* ---------- End Scratch & Win integration ---------- */
+// === Scratch Admin Panel Logic ===
+
+const scratchAdminFab = document.getElementById("scratchAdminFab");
+const scratchAdminModal = document.getElementById("scratchAdminModal");
+const scratchAdminClose = document.getElementById("scratchAdminClose");
+
+scratchAdminFab.onclick = () => { scratchAdminModal.style.display = "flex"; loadScratchAdmin(); };
+scratchAdminClose.onclick = () => { scratchAdminModal.style.display = "none"; };
+
+async function loadScratchAdmin(){
+ const prizeBox = document.getElementById("scratchPrizesList");
+ prizeBox.innerHTML = "";
+ for(let i=1;i<=25;i++){
+   prizeBox.innerHTML += `<div style='margin:4px;padding:4px;border:1px solid #ddd;'>Card ${i}: <input id='p${i}' style='width:150px;'/></div>`;
+ }
+ const snap = await dbGet(dbRef(luckyDb,"cards"));
+ if(snap.exists()){
+   const cards = snap.val();
+   for(let i=1;i<=25;i++){
+     const el = document.getElementById("p"+i);
+     if(el) el.value = cards[i]?.prize || "";
+   }
+ }
+ loadScratchUsers();
+}
+
+async function loadScratchUsers(){
+ const userBox = document.getElementById("scratchUsersList");
+ userBox.innerHTML = "Loading...";
+ const snap = await dbGet(dbRef(luckyDb,"users"));
+ if(!snap.exists()){ userBox.innerHTML = "No winners yet"; return; }
+ const users = snap.val();
+ userBox.innerHTML = "";
+ Object.keys(users).forEach(phone=>{
+   const u = users[phone];
+   userBox.innerHTML += `<div style='padding:6px;border-bottom:1px solid #eee;'><b>${phone}</b><br>Card: ${u.card} | Prize: ${u.prize}<button onclick="removeScratchUser('${phone}')">Remove</button></div>`;
+ });
+}
+
+window.removeScratchUser = async function(phone){
+ const snap = await dbGet(dbRef(luckyDb,"users/"+phone));
+ if(snap.exists()){
+   const card = snap.val().card;
+   await dbUpdate(dbRef(luckyDb,"cards/"+card),{opened:false,openedBy:null,openedAt:null});
+ }
+ await dbRemove(dbRef(luckyDb,"users/"+phone));
+ loadScratchUsers();
+};
+
+document.getElementById("scratchRefreshBtn").onclick = loadScratchAdmin;
+
+document.getElementById("scratchSavePrizesBtn").onclick = async ()=>{
+ const updates = {};
+ for(let i=1;i<=25;i++){
+   updates["cards/"+i+"/prize"] = document.getElementById("p"+i).value;
+ }
+ await dbUpdate(dbRef(luckyDb), updates);
+ alert("Saved!");
+};
+
   </script>
 </body>
 </html>
