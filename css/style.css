@@ -1,0 +1,1104 @@
+/* ===========================================
+   SHOPVERSE STYLE.CSS - PART 1
+=========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+:root{
+
+--primary:#2563eb;
+--secondary:#4f46e5;
+--dark:#0f172a;
+--light:#f8fafc;
+--white:#ffffff;
+--text:#334155;
+--shadow:0 15px 35px rgba(0,0,0,.08);
+--radius:18px;
+
+}
+
+body{
+
+background:var(--light);
+color:var(--text);
+overflow-x:hidden;
+
+}
+
+/* Background */
+
+.bg-circle{
+
+position:fixed;
+border-radius:50%;
+filter:blur(90px);
+opacity:.20;
+z-index:-1;
+
+}
+
+.circle1{
+
+width:320px;
+height:320px;
+background:#2563eb;
+top:-100px;
+left:-120px;
+
+}
+
+.circle2{
+
+width:420px;
+height:420px;
+background:#7c3aed;
+bottom:-150px;
+right:-120px;
+
+}
+
+.circle3{
+
+width:250px;
+height:250px;
+background:#38bdf8;
+top:45%;
+left:45%;
+
+}
+
+/* Container */
+
+.container{
+
+width:90%;
+max-width:1300px;
+margin:auto;
+
+}
+
+/* Header */
+
+header{
+
+position:sticky;
+top:0;
+z-index:999;
+backdrop-filter:blur(18px);
+background:rgba(255,255,255,.75);
+box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+}
+
+.nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+
+}
+
+.logo{
+
+display:flex;
+align-items:center;
+gap:10px;
+text-decoration:none;
+font-size:30px;
+font-weight:700;
+color:var(--primary);
+
+}
+
+.search-bar{
+
+display:flex;
+align-items:center;
+width:45%;
+background:#fff;
+border-radius:50px;
+overflow:hidden;
+box-shadow:var(--shadow);
+
+}
+
+.search-bar input{
+
+flex:1;
+padding:15px 20px;
+border:none;
+outline:none;
+font-size:15px;
+
+}
+
+.search-bar button{
+
+width:60px;
+height:55px;
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+border:none;
+color:#fff;
+cursor:pointer;
+font-size:18px;
+
+}
+
+.nav-icons{
+
+display:flex;
+align-items:center;
+gap:18px;
+
+}
+
+.nav-icons a{
+
+text-decoration:none;
+color:#222;
+font-size:22px;
+transition:.3s;
+
+}
+
+.nav-icons a:hover{
+
+color:var(--primary);
+
+}
+
+.login-btn{
+
+padding:12px 28px;
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+color:#fff !important;
+border-radius:50px;
+font-size:15px;
+
+}
+
+/* Hero */
+
+.hero{
+
+padding:90px 0;
+
+}
+
+.hero-grid{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+
+}
+
+.badge{
+
+display:inline-block;
+padding:10px 20px;
+background:#dbeafe;
+color:var(--primary);
+border-radius:40px;
+font-weight:600;
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:65px;
+line-height:1.1;
+margin-bottom:25px;
+color:var(--dark);
+
+}
+
+.hero h1 span{
+
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+
+.hero p{
+
+font-size:18px;
+line-height:1.8;
+margin-bottom:35px;
+max-width:550px;
+
+}
+
+/* Buttons */
+
+.hero-buttons{
+
+display:flex;
+gap:18px;
+margin-bottom:40px;
+
+}
+
+.primary-btn{
+
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:15px 35px;
+border-radius:50px;
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+color:#fff;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+transform:translateY(-4px);
+box-shadow:0 15px 35px rgba(37,99,235,.30);
+
+}
+
+.secondary-btn{
+
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:15px 35px;
+border-radius:50px;
+border:2px solid var(--primary);
+text-decoration:none;
+color:var(--primary);
+font-weight:600;
+transition:.3s;
+
+}
+
+.secondary-btn:hover{
+
+background:var(--primary);
+color:#fff;
+
+}
+
+/* Stats */
+
+.hero-stats{
+
+display:flex;
+gap:45px;
+
+}
+
+.hero-stats h2{
+
+font-size:34px;
+color:var(--primary);
+
+}
+
+.hero-stats p{
+
+font-size:14px;
+margin-top:5px;
+
+}
+
+/* Product Card */
+
+.hero-card{
+
+background:#fff;
+padding:30px;
+border-radius:25px;
+box-shadow:var(--shadow);
+position:relative;
+text-align:center;
+transition:.35s;
+
+}
+
+.hero-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.discount{
+
+position:absolute;
+top:20px;
+left:20px;
+background:#ef4444;
+color:#fff;
+padding:8px 15px;
+border-radius:30px;
+font-size:13px;
+
+}
+
+.hero-card img{
+
+width:100%;
+max-width:320px;
+margin:30px auto;
+
+}
+
+.hero-card h3{
+
+font-size:24px;
+margin-bottom:15px;
+
+}
+
+.rating{
+
+color:#f59e0b;
+margin-bottom:15px;
+
+}
+
+.price{
+
+font-size:28px;
+font-weight:700;
+color:var(--primary);
+
+}
+
+.price span{
+
+margin-left:10px;
+text-decoration:line-through;
+font-size:18px;
+color:#888;
+
+}
+
+.hero-card button{
+
+margin-top:25px;
+width:100%;
+padding:15px;
+border:none;
+border-radius:50px;
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+color:#fff;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+
+}
+
+.hero-card button:hover{
+
+transform:scale(1.03);
+
+}
+/* ===========================================
+   SHOPVERSE STYLE.CSS - PART 2
+   Categories • Products • Flash Sale • Sellers
+=========================================== */
+
+/* ---------- Section Title ---------- */
+
+.section-title{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:var(--dark);
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#64748b;
+    font-size:17px;
+}
+
+/* ---------- Categories ---------- */
+
+.categories{
+    padding:90px 0;
+}
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:28px;
+}
+
+.category-card{
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(12px);
+    border-radius:22px;
+    padding:35px 25px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    transition:.35s;
+    cursor:pointer;
+}
+
+.category-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 45px rgba(37,99,235,.15);
+}
+
+.category-card .icon{
+    width:90px;
+    height:90px;
+    margin:auto;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:42px;
+    background:linear-gradient(135deg,#dbeafe,#eef4ff);
+    margin-bottom:20px;
+}
+
+.category-card h3{
+    font-size:22px;
+    margin-bottom:10px;
+    color:var(--dark);
+}
+
+.category-card p{
+    color:#64748b;
+    line-height:1.7;
+}
+
+/* ---------- Featured Products ---------- */
+
+.featured-products{
+    padding:90px 0;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.product-card{
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+    position:relative;
+    box-shadow:var(--shadow);
+    transition:.35s;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+}
+
+.product-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.offer{
+    position:absolute;
+    top:18px;
+    left:18px;
+    background:#ef4444;
+    color:#fff;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.wishlist{
+    position:absolute;
+    top:18px;
+    right:18px;
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    cursor:pointer;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.wishlist:hover{
+    background:var(--primary);
+    color:#fff;
+}
+
+.product-content{
+    padding:24px;
+}
+
+.category{
+    color:var(--primary);
+    font-size:14px;
+    font-weight:600;
+}
+
+.product-content h3{
+    margin:12px 0;
+    font-size:22px;
+    color:var(--dark);
+}
+
+.product-content .rating{
+    color:#f59e0b;
+    margin-bottom:15px;
+}
+
+.product-content .rating span{
+    color:#64748b;
+    margin-left:6px;
+}
+
+.product-content .price{
+    font-size:28px;
+    color:var(--primary);
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.product-content del{
+    color:#94a3b8;
+    font-size:18px;
+    margin-left:10px;
+}
+
+.cart-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.cart-btn:hover{
+    transform:scale(1.03);
+    box-shadow:0 15px 30px rgba(37,99,235,.25);
+}
+
+.cart-btn i{
+    margin-right:8px;
+}
+
+/* ---------- Flash Sale ---------- */
+
+.flash-sale{
+    padding:80px 0;
+}
+
+.flash-box{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:#fff;
+    padding:45px;
+    border-radius:25px;
+    box-shadow:0 20px 40px rgba(37,99,235,.25);
+}
+
+.flash-box h2{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.flash-box p{
+    font-size:18px;
+}
+
+/* ---------- Top Sellers ---------- */
+
+.top-sellers{
+    padding:90px 0;
+}
+
+.seller-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
+}
+
+.seller-card{
+    background:#fff;
+    border-radius:22px;
+    padding:30px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    transition:.35s;
+}
+
+.seller-card:hover{
+    transform:translateY(-8px);
+}
+
+.seller-card img{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.seller-card h3{
+    color:var(--dark);
+    margin-bottom:8px;
+}
+
+.seller-card p{
+    color:#64748b;
+    margin-bottom:12px;
+}
+
+.seller-card span{
+    color:#f59e0b;
+    font-weight:600;
+}
+
+/* ---------- Why ShopVerse ---------- */
+
+.features{
+    padding:90px 0;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:28px;
+}
+
+.feature-card{
+    background:#fff;
+    border-radius:22px;
+    padding:40px 25px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    transition:.35s;
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+}
+
+.feature-card i{
+    font-size:46px;
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+.feature-card h3{
+    margin-bottom:12px;
+    color:var(--dark);
+}
+
+.feature-card p{
+    color:#64748b;
+    line-height:1.7;
+}
+/* ===========================================
+   SHOPVERSE STYLE.CSS - PART 3
+   Testimonials • Newsletter • Footer •
+   Floating Buttons • Dark Mode • Responsive
+===========================================*/
+
+/* ================= Testimonials ================= */
+
+.testimonials{
+    padding:90px 0;
+    background:#f1f5f9;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.testimonial-card{
+    background:#fff;
+    border-radius:22px;
+    padding:35px;
+    box-shadow:var(--shadow);
+    transition:.35s;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-10px);
+}
+
+.stars{
+    color:#f59e0b;
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.testimonial-card p{
+    line-height:1.8;
+    color:#475569;
+    margin-bottom:25px;
+}
+
+.testimonial-card h4{
+    color:var(--dark);
+}
+
+.testimonial-card span{
+    color:#64748b;
+    font-size:14px;
+}
+
+/* ================= Newsletter ================= */
+
+.newsletter{
+    padding:90px 0;
+}
+
+.newsletter-box{
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:#fff;
+    padding:60px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 20px 40px rgba(37,99,235,.25);
+}
+
+.newsletter-box h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.newsletter-box p{
+    margin-bottom:35px;
+    opacity:.9;
+}
+
+.newsletter-box form{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.newsletter-box input{
+    width:420px;
+    max-width:100%;
+    padding:18px 22px;
+    border:none;
+    border-radius:50px;
+    outline:none;
+    font-size:15px;
+}
+
+.newsletter-box button{
+    padding:18px 35px;
+    border:none;
+    border-radius:50px;
+    background:#fff;
+    color:var(--primary);
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.newsletter-box button:hover{
+    transform:translateY(-3px);
+}
+
+/* ================= Footer ================= */
+
+footer{
+    background:#0f172a;
+    color:#cbd5e1;
+    padding-top:70px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:40px;
+}
+
+.footer-grid h2,
+.footer-grid h3{
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.footer-grid p{
+    line-height:1.8;
+}
+
+.footer-grid ul{
+    list-style:none;
+}
+
+.footer-grid li{
+    margin-bottom:12px;
+}
+
+.footer-grid a{
+    text-decoration:none;
+    color:#cbd5e1;
+    transition:.3s;
+}
+
+.footer-grid a:hover{
+    color:#fff;
+    padding-left:5px;
+}
+
+.social-links{
+    display:flex;
+    gap:12px;
+}
+
+.social-links a{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#1e293b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    transition:.3s;
+}
+
+.social-links a:hover{
+    background:var(--primary);
+    transform:translateY(-5px);
+}
+
+.copyright{
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.08);
+    margin-top:50px;
+    padding:25px 0;
+}
+
+/* ================= Floating Buttons ================= */
+
+#backToTop,
+#themeToggle{
+
+    position:fixed;
+    right:25px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:#fff;
+    font-size:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.20);
+    transition:.3s;
+    z-index:999;
+
+}
+
+#backToTop{
+    bottom:95px;
+}
+
+#themeToggle{
+    bottom:25px;
+}
+
+#backToTop:hover,
+#themeToggle:hover{
+    transform:scale(1.08);
+}
+
+/* ================= Animations ================= */
+
+.category-card,
+.product-card,
+.seller-card,
+.feature-card,
+.testimonial-card,
+.hero-card{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(35px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ================= Dark Mode ================= */
+
+body.dark{
+
+    --light:#020617;
+    --white:#111827;
+    --text:#e2e8f0;
+    --dark:#ffffff;
+
+    background:#020617;
+    color:#e2e8f0;
+
+}
+
+body.dark header{
+    background:rgba(15,23,42,.88);
+}
+
+body.dark .hero-card,
+body.dark .product-card,
+body.dark .category-card,
+body.dark .seller-card,
+body.dark .feature-card,
+body.dark .testimonial-card{
+    background:#111827;
+    color:#fff;
+}
+
+body.dark .search-bar{
+    background:#1e293b;
+}
+
+body.dark .search-bar input{
+    background:transparent;
+    color:#fff;
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:1100px){
+
+.hero-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.hero p{
+margin:auto;
+}
+
+.hero-buttons,
+.hero-stats{
+justify-content:center;
+}
+
+.search-bar{
+width:60%;
+}
+
+.footer-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.nav{
+flex-direction:column;
+gap:20px;
+}
+
+.search-bar{
+width:100%;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.section-title h2{
+font-size:34px;
+}
+
+.flash-box{
+flex-direction:column;
+text-align:center;
+gap:25px;
+}
+
+.newsletter-box{
+padding:40px 25px;
+}
+
+.newsletter-box input{
+width:100%;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.social-links{
+justify-content:center;
+}
+
+.hero-stats{
+flex-wrap:wrap;
+gap:20px;
+}
+
+}
+
+@media(max-width:480px){
+
+.hero{
+padding:60px 0;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.primary-btn,
+.secondary-btn{
+width:100%;
+}
+
+.hero-buttons{
+flex-direction:column;
+}
+
+.category-card,
+.product-card,
+.seller-card{
+border-radius:18px;
+}
+
+}
