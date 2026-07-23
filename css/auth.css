@@ -1,0 +1,783 @@
+/* ==========================================================
+   ShopVerse Authentication Styles
+   File: auth.css
+   Part 1
+========================================================== */
+
+/* =========================
+   AUTH PAGE
+========================= */
+
+.login-page{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:80px 0;
+}
+
+.login-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+/* =========================
+   LEFT PANEL
+========================= */
+
+.login-left h1{
+    font-size:54px;
+    color:var(--dark);
+    margin-bottom:20px;
+    line-height:1.15;
+}
+
+.login-left p{
+    font-size:17px;
+    color:#64748b;
+    line-height:1.8;
+    margin-bottom:35px;
+    max-width:520px;
+}
+
+.login-features{
+    display:grid;
+    gap:18px;
+}
+
+.login-features div{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(12px);
+    padding:16px 20px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.login-features i{
+    width:48px;
+    height:48px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    color:#fff;
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    font-size:18px;
+}
+
+.login-features span{
+    font-weight:600;
+    color:var(--dark);
+}
+
+/* =========================
+   AUTH CARD
+========================= */
+
+.login-card{
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(18px);
+    border-radius:28px;
+    padding:45px;
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+}
+
+.login-card h2{
+    text-align:center;
+    font-size:34px;
+    color:var(--dark);
+    margin-bottom:10px;
+}
+
+.login-card>p{
+    text-align:center;
+    color:#64748b;
+    margin-bottom:35px;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.input-group{
+    margin-bottom:22px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:var(--dark);
+}
+
+.input-box{
+    position:relative;
+}
+
+.input-box i:first-child{
+    position:absolute;
+    left:18px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#94a3b8;
+}
+
+.input-box input{
+    width:100%;
+    height:56px;
+    padding:0 55px;
+    border:2px solid #e2e8f0;
+    border-radius:16px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+    background:#fff;
+}
+
+.input-box input:focus{
+    border-color:var(--primary);
+    box-shadow:0 0 0 4px rgba(37,99,235,.10);
+}
+
+.toggle-password{
+    position:absolute;
+    right:16px;
+    top:50%;
+    transform:translateY(-50%);
+    border:none;
+    background:none;
+    cursor:pointer;
+    color:#94a3b8;
+    font-size:16px;
+}
+
+.toggle-password:hover{
+    color:var(--primary);
+}
+
+/* =========================
+   OPTIONS
+========================= */
+
+.login-options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:18px 0 30px;
+    font-size:14px;
+}
+
+.remember{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#475569;
+}
+
+.login-options a{
+    text-decoration:none;
+    color:var(--primary);
+    font-weight:600;
+}
+
+.login-options a:hover{
+    text-decoration:underline;
+}
+
+/* =========================
+   TERMS
+========================= */
+
+.terms-box{
+    margin:20px 0 28px;
+    font-size:14px;
+    color:#475569;
+}
+
+.terms-box label{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    line-height:1.7;
+}
+
+.terms-box input{
+    margin-top:4px;
+}
+
+.terms-box a{
+    color:var(--primary);
+    text-decoration:none;
+    font-weight:600;
+}
+
+.terms-box a:hover{
+    text-decoration:underline;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.login-btn-full{
+    width:100%;
+    height:56px;
+    border:none;
+    border-radius:16px;
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.login-btn-full:hover{
+    transform:translateY(-3px);
+    box-shadow:0 18px 35px rgba(37,99,235,.25);
+}
+
+.login-btn-full i{
+    margin-right:8px;
+}
+/* ==========================================================
+   ShopVerse Authentication Styles
+   File: auth.css
+   Part 2
+========================================================== */
+
+/* =========================
+   PASSWORD STRENGTH
+========================= */
+
+.password-strength{
+    width:100%;
+    height:8px;
+    background:#e5e7eb;
+    border-radius:50px;
+    margin-top:12px;
+    overflow:hidden;
+}
+
+#strengthBar{
+    width:0%;
+    height:100%;
+    border-radius:50px;
+    transition:all .35s ease;
+    background:#ef4444;
+}
+
+#strengthText{
+    display:block;
+    margin-top:8px;
+    font-size:13px;
+    color:#64748b;
+}
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:28px 0;
+    color:#94a3b8;
+    font-size:14px;
+    font-weight:600;
+}
+
+.divider::before,
+.divider::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:#e2e8f0;
+}
+
+.divider span{
+    padding:0 18px;
+}
+
+/* =========================
+   GOOGLE BUTTON
+========================= */
+
+.google-btn{
+    width:100%;
+    height:56px;
+    border:2px solid #e2e8f0;
+    border-radius:16px;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.google-btn:hover{
+    border-color:var(--primary);
+    transform:translateY(-2px);
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.google-btn img{
+    width:22px;
+    height:22px;
+    object-fit:contain;
+}
+
+/* =========================
+   REGISTER LINKS
+========================= */
+
+.register-links{
+    margin-top:28px;
+    text-align:center;
+}
+
+.register-links p{
+    color:#64748b;
+    margin-bottom:12px;
+}
+
+.register-links a{
+    display:block;
+    margin:8px 0;
+    color:var(--primary);
+    font-weight:600;
+    text-decoration:none;
+}
+
+.register-links a:hover{
+    text-decoration:underline;
+}
+
+/* =========================
+   LOGIN MESSAGE
+========================= */
+
+.login-message{
+    display:none;
+    margin-top:20px;
+    padding:14px 18px;
+    border-radius:14px;
+    font-size:14px;
+    font-weight:500;
+}
+
+.login-message.success{
+    display:block;
+    color:#166534;
+    background:#dcfce7;
+    border:1px solid #86efac;
+}
+
+.login-message.error{
+    display:block;
+    color:#991b1b;
+    background:#fee2e2;
+    border:1px solid #fca5a5;
+}
+
+/* =========================
+   LOADING OVERLAY
+========================= */
+
+.loading-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(10px);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    z-index:9999;
+}
+
+.loading-overlay.active{
+    display:flex;
+}
+
+.loader{
+    width:60px;
+    height:60px;
+    border:6px solid #dbeafe;
+    border-top:6px solid var(--primary);
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+.loading-overlay p{
+    margin-top:18px;
+    color:#475569;
+    font-weight:600;
+}
+
+@keyframes spin{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+/* =========================
+   ROLE SWITCH
+========================= */
+
+.role-switch{
+    display:flex;
+    background:#eef4ff;
+    padding:6px;
+    border-radius:16px;
+    margin-bottom:30px;
+}
+
+.role-btn{
+    flex:1;
+    border:none;
+    background:transparent;
+    padding:14px;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+    color:#475569;
+}
+
+.role-btn.active{
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:#fff;
+    box-shadow:0 10px 20px rgba(37,99,235,.25);
+}
+
+/* =========================
+   SIMPLE ANIMATIONS
+========================= */
+
+.login-card{
+    animation:fadeUp .7s ease;
+}
+
+.login-left{
+    animation:fadeLeft .8s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes fadeLeft{
+
+    from{
+        opacity:0;
+        transform:translateX(-40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+/* ==========================================================
+   ShopVerse Authentication Styles
+   File: auth.css
+   Part 3
+========================================================== */
+
+/* =========================
+   BACKGROUND DECORATION
+========================= */
+
+.bg-circle{
+    position:fixed;
+    border-radius:50%;
+    filter:blur(80px);
+    opacity:.18;
+    z-index:-1;
+    pointer-events:none;
+}
+
+.circle1{
+    width:320px;
+    height:320px;
+    background:#2563eb;
+    top:-80px;
+    left:-80px;
+}
+
+.circle2{
+    width:260px;
+    height:260px;
+    background:#38bdf8;
+    right:-60px;
+    top:120px;
+}
+
+.circle3{
+    width:340px;
+    height:340px;
+    background:#60a5fa;
+    bottom:-120px;
+    left:35%;
+}
+
+/* =========================
+   BADGE
+========================= */
+
+.badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 18px;
+    border-radius:50px;
+    background:#dbeafe;
+    color:var(--primary);
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:22px;
+}
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.social-links{
+    display:flex;
+    gap:14px;
+    margin-top:15px;
+}
+
+.social-links a{
+    width:42px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#f1f5f9;
+    color:var(--primary);
+    text-decoration:none;
+    transition:.3s;
+}
+
+.social-links a:hover{
+    background:var(--primary);
+    color:#fff;
+    transform:translateY(-4px);
+}
+
+/* =========================
+   BACK TO TOP BUTTON
+========================= */
+
+#backToTop{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:48px;
+    height:48px;
+    border:none;
+    border-radius:50%;
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:#fff;
+    cursor:pointer;
+    display:none;
+    box-shadow:0 12px 24px rgba(37,99,235,.25);
+    z-index:1000;
+}
+
+#backToTop.show{
+    display:block;
+}
+
+/* =========================
+   THEME TOGGLE
+========================= */
+
+#themeToggle{
+    position:fixed;
+    right:25px;
+    bottom:85px;
+    width:48px;
+    height:48px;
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    color:var(--primary);
+    cursor:pointer;
+    box-shadow:0 12px 24px rgba(0,0,0,.10);
+    z-index:1000;
+    transition:.3s;
+}
+
+#themeToggle:hover{
+    transform:translateY(-3px);
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark{
+    background:#0f172a;
+    color:#f8fafc;
+}
+
+body.dark .login-card,
+body.dark .login-features div{
+    background:#1e293b;
+}
+
+body.dark .login-left h1,
+body.dark .login-card h2,
+body.dark .input-group label,
+body.dark .login-features span{
+    color:#f8fafc;
+}
+
+body.dark .login-left p,
+body.dark .login-card>p,
+body.dark .register-links p,
+body.dark .remember,
+body.dark #strengthText{
+    color:#cbd5e1;
+}
+
+body.dark .input-box input{
+    background:#334155;
+    border-color:#475569;
+    color:#fff;
+}
+
+body.dark .google-btn{
+    background:#334155;
+    border-color:#475569;
+    color:#fff;
+}
+
+body.dark .role-switch{
+    background:#334155;
+}
+
+body.dark .social-links a{
+    background:#334155;
+    color:#fff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width:992px){
+
+.login-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+}
+
+.login-left{
+    text-align:center;
+}
+
+.login-left p{
+    margin:0 auto 35px;
+}
+
+.login-features{
+    max-width:520px;
+    margin:auto;
+}
+
+}
+
+@media (max-width:768px){
+
+.login-page{
+    padding:50px 0;
+}
+
+.login-card{
+    padding:30px 22px;
+}
+
+.login-left h1{
+    font-size:36px;
+}
+
+.login-card h2{
+    font-size:28px;
+}
+
+.input-box input,
+.login-btn-full,
+.google-btn{
+    height:52px;
+}
+
+.login-options{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+}
+
+.role-switch{
+    flex-direction:column;
+}
+
+}
+
+@media (max-width:480px){
+
+.login-left h1{
+    font-size:30px;
+}
+
+.login-features div{
+    padding:14px;
+}
+
+.badge{
+    font-size:13px;
+}
+
+.login-card{
+    border-radius:20px;
+}
+
+.social-links{
+    justify-content:center;
+}
+
+}
+
+/* =========================
+   END OF AUTH.CSS
+========================= */
