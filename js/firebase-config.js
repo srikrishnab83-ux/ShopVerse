@@ -2,30 +2,30 @@
 // SHOPVERSE FIREBASE CONFIG
 // ========================================
 
-// Firebase SDK
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-analytics.js";
 import { getAuth } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore.js";
-import { getStorage } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-storage.js";
 
 // Firebase Configuration
 
 const firebaseConfig = {
 
-apiKey: "YOUR_API_KEY",
+  apiKey: "AIzaSyCX7fx7XvW6duavBYrTrzysIQN5gPyfJGo",
 
-authDomain: "YOUR_PROJECT.firebaseapp.com",
+  authDomain: "willwin-cart.firebaseapp.com",
 
-projectId: "YOUR_PROJECT_ID",
+  databaseURL: "https://willwin-cart-default-rtdb.firebaseio.com",
 
-storageBucket: "YOUR_PROJECT.firebasestorage.app",
+  projectId: "willwin-cart",
 
-messagingSenderId: "YOUR_SENDER_ID",
+  storageBucket: "willwin-cart.firebasestorage.app",
 
-appId: "YOUR_APP_ID",
+  messagingSenderId: "432614337343",
 
-measurementId: "YOUR_MEASUREMENT_ID"
+  appId: "1:432614337343:web:336c27edc1dd734d7c418a",
+
+  measurementId: "G-8WD54NWJW5"
 
 };
 
@@ -39,55 +39,16 @@ const auth = getAuth(app);
 
 const db = getFirestore(app);
 
-const storage = getStorage(app);
-
 // Export
 
 export {
 
-app,
+  app,
 
-analytics,
+  analytics,
 
-auth,
+  auth,
 
-db,
-
-storage
+  db
 
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
