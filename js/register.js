@@ -468,7 +468,7 @@ redirect to dashboard.
 onAuthStateChanged(auth, (user) => {
 
     if (user && user.emailVerified) {
-        window.location.href = "customer/dashboard.html";
+        window.location.href = "customer-dashboard.html";
     }
 
 });
