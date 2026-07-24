@@ -153,7 +153,8 @@ async function signInWithGoogle() {
             case "customer":
 
                 window.location.href =
-                    "customer/dashboard.html";
+                    "customer-dashboard.html";
+          
 
                 break;
 
